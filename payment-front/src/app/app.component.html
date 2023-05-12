@@ -1,0 +1,10 @@
+<h2>Stripe Payment Gateway</h2>
+<input type="text" #box />
+<button (click)="makepayment(10)">Pay</button>
+
+<div *ngIf="success">
+  <h2>Payment is Successful</h2>
+</div>
+<div *ngIf="failure">
+  <h2>some error occured durnig transaction</h2>
+</div>
